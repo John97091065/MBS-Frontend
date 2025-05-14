@@ -4,10 +4,14 @@ import { useEffect } from 'react';
 
 
 
-export default function HomePage() {
+export default function AboutPage() {
     const StyleSheet = {
         container: {
-
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
         },
         headings: {
             fontSize: '4rem',
@@ -22,9 +26,8 @@ export default function HomePage() {
 
     return (
         <div style={StyleSheet.container}>
-            <h1 style={StyleSheet.headings}>Welcome to Made by Shandy</h1>
+            <h1 style={StyleSheet.headings}>About Us</h1>
             <p style={StyleSheet.text}>Made with ❤️ by Shandy</p>
         </div>
     );
-     
 }
