@@ -17,7 +17,7 @@ function RegisterAdForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://127.0.0.1:8000/admin/register", form);
+            const res = await axios.post("http://127.0.0.1:3000/admin/register", form);
             console.log("Admin registered:", res.data);
             alert("Registration successful!");
         }
