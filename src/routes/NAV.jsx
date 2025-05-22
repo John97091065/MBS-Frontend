@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-// import RegisterPage from "../pages/Register";
+import RegisterPage from "../pages/Register";
 import LoginPage from "../pages/Login";
 import BlogPage from "../pages/BlogPage";
 import AboutPage from "../pages/AboutPage";
@@ -23,7 +23,7 @@ function AppRoutes() {
         <Route path="/aboutme" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        {/* <Route path="/register" element={<RegisterPage />} /> */}
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>

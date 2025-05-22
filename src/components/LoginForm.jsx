@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import { loginUser } from "../api/user"; // adjust path as needed
 
 function Login() {
   const [form, setForm] = useState({
@@ -14,10 +14,9 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post( "http://127.0.0.1:8000/login", form );
+      const res = await loginUser(form); //API caller
       console.log("Login successful:", res.data);
       alert("Login successful!");
-      // optionally redirect here
     } catch (err) {
       console.error("Login error:", err);
       alert("Login failed. Please check your name and password.");
